@@ -11,7 +11,7 @@ phases:
       - echo Deploy started on `date`
       - echo Deploying to $ENV_NAME environment....
       - echo Writing image definitions file...
-      - printf '[{"name":"%s","imageUri":"%s"}]' "$CONTAINER_NAME" "$REPO_URI:$IMAGE_TAG" | tee imagedefinitions.json
+      - printf '[{"name":"%s","imageUri":"%s"}]' "bbb" "667736119737.dkr.ecr.us-east-1.amazonaws.com/nginx:latest" | tee imagedefinitions.json
 
 artifacts:
   files: 
