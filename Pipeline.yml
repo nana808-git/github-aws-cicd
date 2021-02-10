@@ -284,7 +284,7 @@ Resources:
             Provider: Manual
             Version: '1'
           Configuration:
-          - CustomData: Approve or Reject this change after running tests       
+            CustomData: Approve or Reject this change after running tests       
       - Name: Prod
         Actions:
         - Name: Deploy
