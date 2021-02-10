@@ -146,8 +146,8 @@ Resources:
   CodePipelineWebhook:
     Type: 'AWS::CodePipeline::Webhook'
     Properties:
-      Authentification: GITHUB_HMAC
-      AuthentificationConfiguration:
+      Authentication: GITHUB_HMAC
+      AuthenticationConfiguration:
         SecretToken: '{{resolve:secretsmanager:GITHUB_ACCESS:SecretString:GITHUB_ACCESS_TOKEN}}'
       RegisterWithThirdParty: 'true'
       Filters:
